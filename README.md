@@ -1,12 +1,9 @@
 # mprpc
-<<<<<<< HEAD
 
 A distributed network communication framework based on  Muduo and zookeeper
-=======
+===========================================================================
+
 A distributed network communication framework based on the Muduo
-
-
->>>>>>> 1b164ee... Initial commit
 
 ## mprpc框架使用方法
 
@@ -17,9 +14,13 @@ A distributed network communication framework based on the Muduo
 ```cpp
 <<<<<<< HEAD
 zhl@uestc-virtual-machine:~/share/mprpc/test/mprpcexample$ tree
+<<<<<<< HEAD
+
+=======
 =======
 jyhlinux@ubuntu:~/share/mprpc/test/mprpcexample$ tree
 >>>>>>> 1b164ee... Initial commit
+>>>>>>> 8e5e49d... .
 .
 ├── callfriendservice.cc
 ├── friend.pb.cc
@@ -45,35 +46,10 @@ jyhlinux@ubuntu:~/share/mprpc/test/mprpcexample$ tree
 ```sh
 g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /usr/local/lib/ -lprotobuf -lmprpc -lzookeeper_mt -pthread
 ```
-<<<<<<< HEAD
-服务端结构梳理
-![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/05ae453c-f251-4523-9ae7-53fec401068d)
 
 客户端结构梳理
 ![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/9055f964-ebc0-42af-b2cf-6ffba6975132)
 
-<<<<<<< HEAD
-
-
-<<<<<<< HEAD
-=======
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-============
-
->>>>>>> 0b96bbc... 删除冗余信息
-=======
->>>>>>> e06e55f... 删除冗余信息
-服务端结构梳理
-![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/05ae453c-f251-4523-9ae7-53fec401068d)
-
-客户端结构梳理
-![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/9055f964-ebc0-42af-b2cf-6ffba6975132)
-<<<<<<< HEAD
-
-=======
->>>>>>> e45e5b0... 提交
 # 一、集群和分布式的理论讲解
 
 ## 单机聊天服务器存在什么缺点
@@ -108,17 +84,17 @@ g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /u
 
 **黄色部分**：设计rpc方法参数的打包和解析，也就是数据的**序列化和反序列化**，使用Protobuf。
 
-> Protobuf，即 Protocol Buffers，是一种轻量级的数据序列化协议，由Google公司开发，可用于将结构化数据序列化为可在网络上传输的格式。它支持多种编程语言，包括C++、Java、Python等，并且具有跨平台和语言互操作性的特性。
->
-> 使用Protobuf，可以将数据结构定义为.proto文件，然后使用特定的编译器将其编译为目标语言的类。这些类可以用于在不同的系统和编程语言之间传输数据，并且具有更小的体积、更高的效率和更好的可读性。
->
-> 与json比较：
->
-> 1.Protobuf是二进制存储的，xml和json都是文本存储的；
->
-> 2.Protobuf不需要存储额外信息，json存储键值对
->
-> 因此，Protobuf序列化后的数据更小、更快、更灵活，尤其适合在高并发和网络通信中使用。
+Protobuf，即 Protocol Buffers，是一种轻量级的数据序列化协议，由Google公司开发，可用于将结构化数据序列化为可在网络上传输的格式。它支持多种编程语言，包括C++、Java、Python等，并且具有跨平台和语言互操作性的特性。
+
+使用Protobuf，可以将数据结构定义为.proto文件，然后使用特定的编译器将其编译为目标语言的类。这些类可以用于在不同的系统和编程语言之间传输数据，并且具有更小的体积、更高的效率和更好的可读性。
+
+与json比较：
+
+1.Protobuf是二进制存储的，xml和json都是文本存储的；
+
+2.Protobuf不需要存储额外信息，json存储键值对
+
+因此，Protobuf序列化后的数据更小、更快、更灵活，尤其适合在高并发和网络通信中使用。
 
 绿色部分：网络部分，包括寻找rpc服务主机，发起rpc调用请求和响应rpc调用结果，使用**muduo网络库和zookeeper服务配置中心**（专门做服务发现）。
 
@@ -344,7 +320,3 @@ run函数的实现：
 * 然后设置整个 muduo 网络库工作的线程数量
 * 然后创建zookeeper配置中心，将这些方法的信息以及本机的IP地址注册到zookeeper
 * 然后开启本机服务器的事件循环，等待其他服务器的连接
-=======
->>>>>>> 1b164ee... Initial commit
-=======
->>>>>>> 0b96bbc... 删除冗余信息
