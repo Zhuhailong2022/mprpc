@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mprpc
 
 A distributed network communication framework based on  Muduo and zookeeper
@@ -5,6 +6,21 @@ A distributed network communication framework based on  Muduo and zookeeper
 
 A distributed network communication framework based on the Muduo
 
+=======
+<<<<<<< HEAD
+=======
+# mprpc
+<<<<<<< HEAD
+
+A distributed network communication framework based on  Muduo and zookeeper
+=======
+A distributed network communication framework based on the Muduo
+
+
+>>>>>>> 1b164ee... Initial commit
+
+>>>>>>> 8e5e49d... .
+>>>>>>> c3185cc... .
 ## mprpc框架使用方法
 
 我们只需要有`libmprpc.a`这个静态库和对应头文件，`protobuf`库、`zookeeper_mt`库、`pthread`库即可：
@@ -47,9 +63,23 @@ jyhlinux@ubuntu:~/share/mprpc/test/mprpcexample$ tree
 g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /usr/local/lib/ -lprotobuf -lmprpc -lzookeeper_mt -pthread
 ```
 
+<<<<<<< HEAD
 客户端结构梳理
 ![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/9055f964-ebc0-42af-b2cf-6ffba6975132)
 
+<<<<<<< HEAD
+=======
+
+=======
+<<<<<<< HEAD
+>>>>>>> 8e5e49d... .
+服务端结构梳理
+![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/05ae453c-f251-4523-9ae7-53fec401068d)
+
+客户端结构梳理
+![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/9055f964-ebc0-42af-b2cf-6ffba6975132)
+
+>>>>>>> c3185cc... .
 # 一、集群和分布式的理论讲解
 
 ## 单机聊天服务器存在什么缺点
@@ -320,3 +350,5 @@ run函数的实现：
 * 然后设置整个 muduo 网络库工作的线程数量
 * 然后创建zookeeper配置中心，将这些方法的信息以及本机的IP地址注册到zookeeper
 * 然后开启本机服务器的事件循环，等待其他服务器的连接
+=======
+>>>>>>> 1b164ee... Initial commit
