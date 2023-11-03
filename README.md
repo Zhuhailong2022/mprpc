@@ -52,6 +52,7 @@ g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /u
 客户端结构梳理
 ![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/9055f964-ebc0-42af-b2cf-6ffba6975132)
 
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -71,6 +72,8 @@ g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /u
 ![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/9055f964-ebc0-42af-b2cf-6ffba6975132)
 <<<<<<< HEAD
 
+=======
+>>>>>>> e45e5b0... 提交
 # 一、集群和分布式的理论讲解
 
 ## 单机聊天服务器存在什么缺点
