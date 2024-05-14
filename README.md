@@ -10,7 +10,7 @@ A distributed network communication framework based on the Muduo
 测试的目录结构如下：
 
 ```cpp
-jyhlinux@ubuntu:~/share/mprpc/test/mprpcexample$ tree
+zhl@uestc-virtual-machine:~/share/mprpc/test/mprpcexample$ tree
 .
 ├── callfriendservice.cc
 ├── friend.pb.cc
