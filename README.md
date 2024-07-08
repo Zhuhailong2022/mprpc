@@ -1,7 +1,6 @@
 # mprpc
-A distributed network communication framework based on the Muduo
 
-
+A distributed network communication framework based on  Muduo and zookeeper
 
 ## mprpc框架使用方法
 
@@ -36,4 +35,3 @@ zhl@uestc-virtual-machine:~/share/mprpc/test/mprpcexample$ tree
 ```sh
 g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /usr/local/lib/ -lprotobuf -lmprpc -lzookeeper_mt -pthread
 ```
-

@@ -12,14 +12,16 @@
 
 // 客户端都是通过stub代理对象调用rpc方法，都到转发到这里调用，做rpc方法的数据序列化和网络发送
 void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
-                          google::protobuf::RpcController* controller, const google::protobuf::Message* request,
-                          google::protobuf::Message* response, google::protobuf::Closure* done)
+                          google::protobuf::RpcController* controller, 
+                          const google::protobuf::Message* request,
+                          google::protobuf::Message* response, 
+                          google::protobuf::Closure* done)
 {
     const google::protobuf::ServiceDescriptor *sd = method->service();
     std::string service_name = sd->name();
     std::string method_name = method->name();
 
-    // 1.获取方法参数的序列化字符串长度
+    // 1.获取方法参数的序列化字符串长度（函数调用的实参）
     uint32_t args_size = 0;
     std::string args_str;
     if(request->SerializeToString(&args_str))
@@ -85,7 +87,7 @@ void MprpcChannel::CallMethod(const google::protobuf::MethodDescriptor* method,
     // rpc方法向调用service_name的method_name服务，需要查询zk上该服务所在的host信息
     ZkClient zkCli;
     zkCli.Start();
-
+    //查询目标节点是否存在，若存在则返回节点中存储的ip和端口信息
     std::string method_path = "/" + service_name + "/" + method_name;
     std::string host_data = zkCli.GetData(method_path.c_str());
 

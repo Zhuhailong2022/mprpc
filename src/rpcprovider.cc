@@ -3,13 +3,13 @@
 #include "rpcheader.pb.h"
 #include "logger.h"
 #include "zookeeperutil.h"
-
+//service基类指针指向派生类对象
 void RpcProvider::NotifyService(google::protobuf::Service *service)
 {
     ServiceInfo service_info;
     // 获取服务对象的描述信息
     const google::protobuf::ServiceDescriptor *pserviceDesc = service->GetDescriptor();
-    // 获取服务的名字
+    // 获取服务对象的名字
     std::string service_name = pserviceDesc->name();
     // 获取服务对象service的方法数量
     int methodCnt = pserviceDesc->method_count();
@@ -50,7 +50,7 @@ void RpcProvider::Run()
     // 把当前rpc节点上要发布的服务全部注册到zk上，让rpc client可以从zk上发现服务
     // session timeout 30s zkclient 网络IO线程 1/3 * timeout时间发送ping消息
     ZkClient zkCli;
-    zkCli.Start();
+    zkCli.Start();//启动zk客户端
 
     // service_name为永久性节点， method为临时性节点
     for (auto &sp : m_serviceMap)

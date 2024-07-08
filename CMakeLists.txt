@@ -9,9 +9,12 @@ set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 # 设置项目库文件输出路径
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
+
 # 设置项目编译头文件搜索路径
 include_directories(${PROJECT_SOURCE_DIR}/src/include)
 include_directories(${PROJECT_SOURCE_DIR}/example)
+
+include_directories(/snap/protobuf/52/include/google/protobuf/)
 # 设置库文件搜索路径
 link_directories(/usr/local/lib ${PROJECT_SOURCE_DIR}/lib)
 
