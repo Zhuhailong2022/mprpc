@@ -36,9 +36,6 @@ zhl@uestc-virtual-machine:~/share/mprpc/test/mprpcexample$ tree
 g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /usr/local/lib/ -lprotobuf -lmprpc -lzookeeper_mt -pthread
 ```
 
-<<<<<<< HEAD
-============
-
 服务端结构梳理
 ![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/05ae453c-f251-4523-9ae7-53fec401068d)
 
