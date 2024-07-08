@@ -58,9 +58,12 @@ g++ callfriendservice.cc  friend.pb.cc -o consumer -I lib/include/ -L lib/ -L /u
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ============
 
 >>>>>>> 0b96bbc... 删除冗余信息
+=======
+>>>>>>> e06e55f... 删除冗余信息
 服务端结构梳理
 ![image](https://github.com/Zhuhailong2022/mprpc/assets/115600879/05ae453c-f251-4523-9ae7-53fec401068d)
 
