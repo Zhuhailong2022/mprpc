@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: /home/zhl/rpc/mprpc
+=======
+# Install script for directory: /home/jyhlinux/share/mprpc
+>>>>>>> 1b164ee... Initial commit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -37,10 +41,22 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+<<<<<<< HEAD
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zhl/rpc/mprpc/build/src/cmake_install.cmake")
   include("/home/zhl/rpc/mprpc/build/example/cmake_install.cmake")
+=======
+# Set default install directory permissions.
+if(NOT DEFINED CMAKE_OBJDUMP)
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for each subdirectory.
+  include("/home/jyhlinux/share/mprpc/build/src/cmake_install.cmake")
+  include("/home/jyhlinux/share/mprpc/build/example/cmake_install.cmake")
+>>>>>>> 1b164ee... Initial commit
 
 endif()
 
@@ -52,5 +68,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "/home/zhl/rpc/mprpc/build/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "/home/jyhlinux/share/mprpc/build/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 1b164ee... Initial commit
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

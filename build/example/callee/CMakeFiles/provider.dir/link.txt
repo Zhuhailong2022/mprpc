@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 /usr/bin/c++  -g  -rdynamic CMakeFiles/provider.dir/friendservice.cc.o CMakeFiles/provider.dir/__/friend.pb.cc.o  -o ../../../bin/provider   -L/usr/local/lib  -L/home/zhl/rpc/mprpc/lib  -Wl,-rpath,/usr/local/lib:/home/zhl/rpc/mprpc/lib ../../../lib/libmprpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt -lprotobuf -lpthread 
+=======
+/usr/bin/c++ -g -rdynamic CMakeFiles/provider.dir/friendservice.cc.o CMakeFiles/provider.dir/__/friend.pb.cc.o -o ../../../bin/provider   -L/usr/local/lib  -L/home/jyhlinux/share/mprpc/lib  -Wl,-rpath,/usr/local/lib:/home/jyhlinux/share/mprpc/lib ../../../lib/libmprpc.a -lprotobuf -lmuduo_net -lmuduo_base -lpthread -lzookeeper_mt 
+>>>>>>> 1b164ee... Initial commit
