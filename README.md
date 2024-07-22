@@ -18,6 +18,7 @@ A distributed network communication framework based on the Muduo
 
 测试的目录结构如下：
 
+```
 zhl@uestc-virtual-machine:~/share/mprpc/test/mprpcexample$ tree
 .
 ├── callfriendservice.cc
@@ -36,6 +37,7 @@ zhl@uestc-virtual-machine:~/share/mprpc/test/mprpcexample$ tree
 │   │   └── zookeeperutil.h
 │   └── libmprpc.a
 └── test.conf
+```
 
 进行编译生成可执行文件
 
