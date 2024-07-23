@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # Install script for directory: /home/zhl/rpc/mprpc/example/callee
-=======
-# Install script for directory: /home/jyhlinux/share/mprpc/example/callee
->>>>>>> 1b164ee... Initial commit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -41,11 +37,3 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-<<<<<<< HEAD
-=======
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
->>>>>>> 1b164ee... Initial commit

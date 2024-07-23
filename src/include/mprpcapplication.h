@@ -13,9 +13,9 @@ public:
     static MprpcApplication& getInstance();
     static MprpcConfig& getConfig();
 private:
-    static MprpcConfig m_config;
+    static MprpcConfig m_config;//单例模式
 
     MprpcApplication(){}
-    MprpcApplication(const MprpcApplication&) = delete;
-    MprpcApplication(MprpcApplication&&) = delete;
+    MprpcApplication(const MprpcApplication&) = delete;//删除拷贝构造函数
+    MprpcApplication(MprpcApplication&&) = delete;//删除移动构造函数
 };
